@@ -80,4 +80,24 @@ p 17.odd? #=? true
 
 p 12.between?(10,15) #=> true
 
-p 23.
+p 23.between?(10,25)
+
+
+# Bang Methods
+# You can call methods on objects and they won't be modified unless you explicitly set it to be overwritten
+
+text = "HEY"
+
+p text.downcase #=> "hey"
+p text #=> "HEY"
+
+# To overwrite the right way you can do this:
+text = text.downcase #=> "hey"
+
+# OR
+
+# When you add this "!" you are indicating that the method performs the action and it is overwritten
+p text.downcase! #=> "hey"
+p text #=> "hey"
+
+
