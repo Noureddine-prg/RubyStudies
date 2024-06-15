@@ -14,11 +14,11 @@ my_hash = {
   "a random word" => "ahoy",
   "Dorothy's math test score" => 94,
   "Array" => [1,2,3],
-  "an empty hash within a hash" => {}  
+  "an empty hash within a hash" => {}
 }
 
 # Same as array, you  can create a new hash by calling ::new method
-my_hash = Hash.new 
+my_hash = Hash.new
 p my_hash #=> {}
 
 # Hash can take in anything pretty much
@@ -32,16 +32,16 @@ shoes = {
 
 shoes["summer"] #=> "sandals"
 
-  # if you try to access a key that doesn't exist, it will return nil 
+  # if you try to access a key that doesn't exist, it will return nil
   shoes["hiking"] #=> nil
-  
-  # Can also use fetch - this will return an error so nil value doesn't go unfound 
-  shoes.fetch("hiking") #=> throws key error 
+
+  # Can also use fetch - this will return an error so nil value doesn't go unfound
+  shoes.fetch("hiking") #=> throws key error
 
   # To avoid the error you can give a default value if it doesn't exist
   shoes.fetch("hiking", "hiking boots") #=> hikinh boots
 
-# Adding and changing data 
+# Adding and changing data
 
 # Add key value pair into hash like this
 shoes["fall"] = "sneakers"
@@ -49,20 +49,20 @@ shoes["fall"] = "sneakers"
 shoes #= {
 #   "summer" => "sandals",
 #   "winter" => "boots",
-#   "fall" => "sneakers" 
+#   "fall" => "sneakers"
 # }
 
-# Removing data 
+# Removing data
 
 # Deleting is done using the delete method, returns vlaye of key-value pair that was deleted from hash
 shoes.delete("summer") #=> deletes and returns sandals
 shoes #= {
 #   "winter" => "boots",
-#   "fall" => "sneakers" 
+#   "fall" => "sneakers"
 # }
 
 
-# Hash Methods 
+# Hash Methods
 # All array methods work on hashes in ruby
 
 # Useful methods: .keys .values
@@ -82,7 +82,7 @@ hash2 = {"b" => 256, "c" => 300}
 
 hash1.merge(hash2) #=> {"a" => 100, "b" => 256, "c" => 300}
 
-# Symbols as hash keys 
+# Symbols as hash keys
 # Symbols are mainly used as keys. They allow cleaner syntax
 
 # 'Rocket' syntax
@@ -92,7 +92,7 @@ american_cars = {
   :dodge => "Ram"
 }
 
-# 'Symbols Syntax' 
+# 'Symbols Syntax'
 japanese_cars = {
   honda: "Accord",
   toyota: "Corolla",
